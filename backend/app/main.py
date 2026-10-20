@@ -35,3 +35,11 @@ def root() -> dict:
         "service": "SOLVIA",
         "description": "Intelligent Solution Discovery for SAP/IT support consultants",
     }
+
+
+@app.api_route("/", methods=["GET", "HEAD"])
+def root() -> dict:
+    return {
+        "service": "SOLVIA",
+        "description": "Intelligent Solution Discovery for SAP/IT support consultants",
+    }
